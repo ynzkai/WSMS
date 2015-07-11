@@ -1,0 +1,144 @@
+/* normal style */
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+body {
+	text-rendering: optimizeLegibility;
+	font: 100%/1.5 '微软雅黑', '宋体', Arial, sans-serif;
+}
+
+body, input, button {
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 { font-size: 2em;    /* 2*16 = 32 */       }
+h2 { font-size: 1.5em;  /* 1.5*16 = 24 */     }
+h3 { font-size: 1.17em; /* 1.17*16 = 18.72 */ }
+h4 { font-size: 1em;    /* 1*16 = 16 */       }
+h5 { font-size: 0.83em; /* 0.83*16 = 13.28 */ }
+h6 { font-size: 0.75em; /* 0.75*16 = 12 */    }
+
+p {
+	font-size: 1em;
+	line-height: 1.5;
+	letter-spacing: 0.0625em;
+    margin: 0 0 1em;
+
+	//word break
+	word-break: break-all;
+	/* Non standard for webkit */
+	word-break: break-word;
+
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+a, a:visited {
+	color: #333;
+	text-decoration: none;
+}
+ 
+a:hover {
+	text-decoration: none;
+}
+
+a:active { color: #333; }
+
+a:focus { border: 1px dotted #333; }
+
+
+strong  { font-weight: bold; }
+em { font-style: italic; }
+
+code, pre {
+	font-family: monospace, serif;
+	font-size: 1em;
+}
+
+blockquote {
+	font-style: italic; 
+}
+ 
+blockquote:before { 
+	content: "\201C";
+	display: inline-block;
+	padding-right: .4em;
+}
+
+
+/* header style */
+
+.header {
+	height: 2rem;
+	padding: 0 50px;
+	background-color: #6fa000;
+}
+
+.header .navbar {
+	height: 100%;
+}
+
+.header .navbar .group {
+	height: 100%;
+}
+
+.header .navbar .group > * {
+	padding: 0 5px;
+	line-height: 2rem;
+}
+
+.header .navbar .group a,
+.header .navbar .group a:visited {
+	color: #ddd;
+	text-decoration: none;
+}
+ 
+.header .navbar .group a:hover {
+	color: #f2f2f2;
+}
+
+.header .navbar #logo,
+.header .navbar #links {
+	float: left;
+}
+
+.header .navbar #logo {
+	width: 100px;
+}
+
+.header .navbar #links {
+	width: 200px;
+}
+
+.header .navbar #account {
+	float: right;
+	display: inline-block;
+	text-align: right;
+	min-width: 150px;
+}
+
+.header .navbar #account .menu {
+	width: 150px;
+	text-align: center;
+	background-color: #cfb;
+	display: none;
+	box-shadow: 0 2px 5px 2px #ccc;
+}
+
+.header .navbar #account:hover .menu {
+	display: block;
+}

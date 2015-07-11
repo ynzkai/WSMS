@@ -1,0 +1,29 @@
+<div class="header">
+  <div class="navbar">
+	<div id="logo" class="group">
+	  <p>文山美食</p>
+	</div>
+
+	<div id="links" class="group">
+	  <a href="#">placeholder</a>
+	  <a href="#">placeholder</a>
+	</div>
+
+	<div id="account" class="group">
+      <% if user_signed_in? %>
+	    <span><%= current_user.email %></span>
+	    <div class="menu">
+		  <ul>
+		    <li>我的主页</li>
+		    <li>设置头像</li>
+			<li><hr></li>
+		    <li><%= link_to '退出', destroy_user_session_path, method: :delete %></li>
+		  </ul>
+		</div>
+	  <% else %>
+		<%= link_to '注册', new_user_registration_path %>
+		<%= link_to '登录', new_user_session_path %>
+	  <% end %>
+	</div>
+  </div>
+</div>
