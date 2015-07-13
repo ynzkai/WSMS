@@ -5,13 +5,14 @@
 	</div>
 
 	<div id="links" class="group">
-	  <a href="#">placeholder</a>
-	  <a href="#">placeholder</a>
+	  <a href="#">社区</a>
+	  <a href="#">休闲</a>
 	</div>
 
 	<div id="account" class="group">
       <% if user_signed_in? %>
 	    <span><%= current_user.email %></span>
+		<li class="fa fa-caret-down"></li>
 	    <div class="menu">
 		  <ul>
 		    <li>我的主页</li>

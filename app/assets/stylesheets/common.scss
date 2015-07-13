@@ -47,6 +47,11 @@ ul {
 	list-style: none;
 }
 
+hr {
+	height: 1px;
+	border: 1px solid #333;
+}
+
 a, a:visited {
 	color: #333;
 	text-decoration: none;
@@ -85,7 +90,7 @@ blockquote:before {
 .header {
 	height: 2rem;
 	padding: 0 50px;
-	background-color: #6fa000;
+	background-color: #7d997f;
 }
 
 .header .navbar {
@@ -97,18 +102,19 @@ blockquote:before {
 }
 
 .header .navbar .group > * {
+	color: #f8f8f8;
 	padding: 0 5px;
 	line-height: 2rem;
 }
 
 .header .navbar .group a,
 .header .navbar .group a:visited {
-	color: #ddd;
+	color: #f8f8f8;
 	text-decoration: none;
 }
  
 .header .navbar .group a:hover {
-	color: #f2f2f2;
+	//text-shadow: 0 1px 1px #fff;
 }
 
 .header .navbar #logo,
@@ -134,9 +140,9 @@ blockquote:before {
 .header .navbar #account .menu {
 	width: 150px;
 	text-align: center;
-	background-color: #cfb;
+	background-color: #999;
 	display: none;
-	box-shadow: 0 2px 5px 2px #ccc;
+	box-shadow: 0 2px 5px 2px #999;
 }
 
 .header .navbar #account:hover .menu {
