@@ -13,6 +13,7 @@
 body {
 	text-rendering: optimizeLegibility;
 	font: 100%/1.5 '微软雅黑', '宋体', Arial, sans-serif;
+	background-color: #eee;
 }
 
 body, input, button {
@@ -49,7 +50,9 @@ ul {
 
 hr {
 	height: 1px;
-	border: 1px solid #333;
+	border-width: 0;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #eee;
 }
 
 a, a:visited {
@@ -88,9 +91,9 @@ blockquote:before {
 /* header style */
 
 .header {
-	height: 2rem;
+	height: 3rem;
 	padding: 0 50px;
-	background-color: #7d997f;
+	background-color: #fff;
 }
 
 .header .navbar {
@@ -102,14 +105,14 @@ blockquote:before {
 }
 
 .header .navbar .group > * {
-	color: #f8f8f8;
+	color: #fff;
 	padding: 0 5px;
-	line-height: 2rem;
+	line-height: 3rem;
 }
 
 .header .navbar .group a,
 .header .navbar .group a:visited {
-	color: #f8f8f8;
+	color: #555;
 	text-decoration: none;
 }
  
@@ -133,18 +136,17 @@ blockquote:before {
 .header .navbar #account {
 	float: right;
 	display: inline-block;
-	text-align: right;
-	min-width: 150px;
+	position: relative;
+	background-color: #4db038;
 }
 
 .header .navbar #account .menu {
 	width: 150px;
-	text-align: center;
-	background-color: #999;
-	display: none;
-	box-shadow: 0 2px 5px 2px #999;
-}
-
-.header .navbar #account:hover .menu {
-	display: block;
+	background-color: #53944c;
+	color: #555;
+	box-shadow: 0 2px 2px 0 #ddd;
+	position: absolute;
+	z-index: 999;
+	top: 3rem;
+	right: 0;
 }

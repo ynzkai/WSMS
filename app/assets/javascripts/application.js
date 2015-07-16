@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require Simditor/module.min
+//= require Simditor/hotkeys.min
+//= require Simditor/uploader.min
+//= require Simditor/simditor.min
 //= require_tree .
+
